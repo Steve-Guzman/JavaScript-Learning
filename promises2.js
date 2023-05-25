@@ -18,7 +18,8 @@ function onError(error) {          // //the 'error' being passed-in is that of w
     console.log(`Error: ${error}`)
 }
 
-getWeather().then(onSuccess, onError) //AA.) .then() takes two parameters. A resolve and a reject. what should be done if the Promise resolves successful/unsuccessful.
+getWeather()
+    .then(onSuccess, onError) //AA.) .then() takes two parameters. A resolve and a reject. what should be done if the Promise resolves successful/unsuccessful.
 
 
 
