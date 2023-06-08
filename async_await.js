@@ -102,3 +102,6 @@
  }
 
  start5()
+
+
+ //Note though that async functions always return a promise (promise object)
