@@ -14,4 +14,9 @@ const aliceTumbling = [
   const alice3 = document.querySelector("#alice3");
 
 
-  alice1.animate(aliceTumbling, aliceTiming)
+  const rotation = alice1.animate(aliceTumbling, aliceTiming)
+
+  rotation.finished
+    .then(( )=> alice2.animate(aliceTumbling, aliceTiming).finished)
+    .then(() => alice3.animate(aliceTumbling, aliceTiming));
+
